@@ -5,29 +5,21 @@ const theme = {
   colors: {
     primary: "rgb(65, 61, 238)",
     primaryLight: "rgb(65, 61, 238, 0.1)",
+    secondary: "rgb(235, 49, 49)",
+    secondaryLight: "rgb(235, 49, 49, 0.1)",
     white: "#fff",
   },
   fontSizes: {
-    "x-small": "12px",
+    "x-small": "13px",
     small: "16px",
     medium: "24px",
     large: "36px",
   },
-  btn: {
-    padding: {
-      left: "30px",
-      right: "30px",
-      top: "10px",
-      bottom: "10px",
-    },
-  },
-  icons: {
-    shoppingCart: "add_shopping_cart",
-    logout: "logout",
+  fontClr: {
+    default: "#020E27",
   },
 };
 
-console.log("theme", theme);
 const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
